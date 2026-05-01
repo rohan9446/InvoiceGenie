@@ -4,6 +4,8 @@
 
 Built as a full-stack SaaS product with real authentication, Stripe payments, AI-powered insights, and production AWS deployment.
 
+### [🚀 Live Demo →](http://invoicegenie-frontend-rohan.s3-website-us-east-1.amazonaws.com)
+
 ![Dashboard](screenshots/screenshot-dashboard.png)
 
 ---
@@ -252,13 +254,6 @@ invoicegenie/
 │   └── screenshot-profile.png
 └── README.md
 ```
-
----
-
-## Live Demo
-
-- **Frontend**: [invoicegenie-frontend-rohan.s3-website-us-east-1.amazonaws.com](http://invoicegenie-frontend-rohan.s3-website-us-east-1.amazonaws.com)
-- **API**: [3.92.3.102:8000/health](http://3.92.3.102:8000/health)
 
 ---
 
