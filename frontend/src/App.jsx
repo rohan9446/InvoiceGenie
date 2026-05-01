@@ -49,7 +49,7 @@ function App() {
     e.preventDefault()
     setAuthError('')
     const endpoint = authMode === 'login' ? '/api/auth/login' : '/api/auth/signup'
-    const res = await fetch('http://localhost:8000' + endpoint, {
+    const res = await fetch('http://3.92.3.102:8000' + endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(authForm)
@@ -63,7 +63,7 @@ function App() {
 
   // --- API helper ---
   function api(path, options = {}) {
-    return fetch('http://localhost:8000' + path, {
+    return fetch('http://3.92.3.102:8000' + path, {
       ...options,
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + token, ...options.headers }
     }).then(r => r.json())
@@ -203,7 +203,7 @@ function App() {
 
   async function downloadPDF(id, invoiceNumber) {
     try {
-      const res = await fetch(`http://localhost:8000/api/invoices/${id}/pdf?token=${token}`)
+      const res = await fetch(`http://3.92.3.102:8000/api/invoices/${id}/pdf?token=${token}`)
       if (!res.ok) {
         const err = await res.json()
         alert(err.error || 'Failed to download PDF')
