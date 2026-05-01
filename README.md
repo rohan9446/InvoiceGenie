@@ -122,65 +122,6 @@ created_at                     tax_rate
                                created_at
 ```
 
----
-
-## API Endpoints
-
-### Authentication
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/auth/signup` | Create account |
-| POST | `/api/auth/login` | Login |
-
-### Clients
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/clients` | List all clients |
-| POST | `/api/clients` | Create client |
-| PUT | `/api/clients/:id` | Update client |
-| DELETE | `/api/clients/:id` | Delete client |
-
-### Invoices
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/invoices` | List all invoices |
-| POST | `/api/invoices` | Create invoice |
-| PUT | `/api/invoices/:id` | Update invoice |
-| PATCH | `/api/invoices/:id/status` | Update status |
-| DELETE | `/api/invoices/:id` | Delete invoice |
-| GET | `/api/invoices/:id/pdf` | Download PDF |
-
-### Expenses
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/expenses` | List all expenses |
-| POST | `/api/expenses` | Create expense |
-| PUT | `/api/expenses/:id` | Update expense |
-| DELETE | `/api/expenses/:id` | Delete expense |
-
-### Dashboard & AI
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/dashboard` | Financial overview |
-| GET | `/api/ai/insights` | AI financial insights |
-| POST | `/api/ai/categorize` | AI expense categorization |
-
-### Subscription
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/subscription` | Get current plan |
-| POST | `/api/subscription/checkout` | Start Stripe checkout |
-| POST | `/api/subscription/portal` | Open billing portal |
-
-### User Profile
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/user/profile` | Get profile |
-| PUT | `/api/user/profile` | Update profile |
-| PUT | `/api/user/password` | Change password |
-
----
-
 ## Local Development
 
 ### Prerequisites
@@ -271,9 +212,4 @@ invoicegenie/
 - Responsive UI with CSS custom properties
 
 ---
-
-## Author
-
-**Rohan Bandaru** — [GitHub](https://github.com/rohan9446)
-
 Built from scratch as a portfolio project demonstrating production-grade full-stack SaaS development.
